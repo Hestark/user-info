@@ -1,1 +1,19 @@
-
+Explanation of the Code
+Sessions:
+session_start(); — starts a session so you can store and retrieve user data.
+Getting Information:
+$_SERVER['REMOTE_ADDR'] — retrieves the user's IP address.
+$_SERVER['HTTP_USER_AGENT'] — retrieves information about the browser and operating system.
+$_SERVER['REQUEST_URI'] — retrieves the URL of the page being requested by the user.
+date('Y-m-d H:i:s') — gets the current time.
+Authorization Check:
+If the user is logged in (e.g., their username is stored in the session), that information is added to the $userInfo array. If not, it sets the value to "Guest".
+Output Information:
+Uses HTML to format and display user information in a table.
+How to Use
+Create a File:
+Save the translated code above in a file named user_info.php.
+Place the File on Your Server:
+Put it in your web server directory (e.g., /var/www/html/).
+Run the File:
+Open your browser and go to http://your_server_ip/user_info.php, replacing your_server_ip with your server's IP address.
